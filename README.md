@@ -21,7 +21,15 @@ This solution provides a Contextual recommendations with related incidents and p
 📹 [Video Demo](#) (if applicable)  
 🖼️ Screenshots:
 
-![Screenshot 1](link-to-image)
+![OpsBuddy-Query](https://github.com/ewfx/gaipl-l-e-a-p/raw/main/artifacts/demo/incident_query.jpg)  
+*Caption: OpsBuddy handling an incident query with real-time insights.*  
+
+![OpsBuddy-Details](https://github.com/ewfx/gaipl-l-e-a-p/raw/main/artifacts/demo/incident_details.jpg)  
+*Caption: OpsBuddy displaying detailed incident information and automation options.*  
+
+![OpsBuddy-Health](https://github.com/ewfx/gaipl-l-e-a-p/raw/main/artifacts/demo/health_query.jpg)  
+*Caption: OpsBuddy providing system health insights and proactive recommendations.*
+
 
 ## 💡 Inspiration
 IT operations teams face a fragmented, manual incident resolution process—reviewing tickets in ServiceNow, accessing servers, hopping between observability tools, and searching for automation scripts. This leads to prolonged MTTR (industry average: 4 hours), operational strain (60% of time on manual tasks), and high downtime costs ($5,600/minute). We built OpsBuddy to:
