@@ -1,4 +1,4 @@
-# 🚀 Project Name Leap
+# 🚀 OpsBuddy: AI-Powered Incident Resolution Assistant
 
 ## 📌 Table of Contents
 - [Introduction](#introduction)
@@ -14,7 +14,7 @@
 ---
 
 ## 🎯 Introduction
-A brief overview of your project and its purpose. Mention which problem statement are your attempting to solve. Keep it concise and engaging.
+This solution provides a Contextual recommendations with related incidents and provides proactive recommendation engine mapping to related incidents along with observability data to debug issues faster and get more insights.
 
 ## 🎥 Demo
 🔗 [Live Demo](#) (if applicable)  
@@ -24,25 +24,39 @@ A brief overview of your project and its purpose. Mention which problem statemen
 ![Screenshot 1](link-to-image)
 
 ## 💡 Inspiration
-What inspired you to create this project? Describe the problem you're solving.
+IT operations teams face a fragmented, manual incident resolution process—reviewing tickets in ServiceNow, accessing servers, hopping between observability tools, and searching for automation scripts. This leads to prolonged MTTR (industry average: 4 hours), operational strain (60% of time on manual tasks), and high downtime costs ($5,600/minute). We built OpsBuddy to:
+
+Unify incident management workflows.
+Automate diagnostics and resolutions.
+Empower teams with intelligent, actionable insights.
 
 ## ⚙️ What It Does
-Explain the key features and functionalities of your project.
+OpsBuddy transforms incident management by:
+
+Offering a unified platform for incident review, diagnostics, and resolution.
+Providing real-time incident status, impacted services, observability data, historical analysis, and automation options.
+Enabling natural language interaction (chat/voice) and MS Teams integration for seamless support.
+Reducing MTTR and operational costs through AI-driven automation.
 
 ## 🛠️ How We Built It
-Briefly outline the technologies, frameworks, and tools used in development.
+OpsBuddy was developed using:
 
+A backend to integrate with ServiceNow, observability tools, and automation libraries.
+A frontend for an interactive, real-time dashboard.
+An AI engine to process incident data and recommend actions.
+MS Teams API for seamless workflow integration.
+The result is a scalable, intelligent platform that simplifies IT operations.
 ## 🚧 Challenges We Faced
 Describe the major technical or non-technical challenges your team encountered.
 
 ## 🏃 How to Run
 1. Clone the repository  
    ```sh
-   git clone https://github.com/your-repo.git
+   [git clone https://github.com/your-repo.git](https://github.com/ewfx/gaipl-l-e-a-p.git)
    ```
 2. Install dependencies  
    ```sh
-   npm install  # or pip install -r requirements.txt (for Python)
+   npm install  # or pip install 
    ```
 3. Run the project  
    ```sh
@@ -50,11 +64,14 @@ Describe the major technical or non-technical challenges your team encountered.
    ```
 
 ## 🏗️ Tech Stack
-- 🔹 Frontend: React / Vue / Angular
-- 🔹 Backend: Node.js / FastAPI / Django
-- 🔹 Database: PostgreSQL / Firebase
-- 🔹 Other: OpenAI API / Twilio / Stripe
+- 🔹 Frontend: React 
+- 🔹 Backend: python-Flask 
+- 🔹 Other: OpenAI API / Ollama 
 
 ## 👥 Team
-- **Your Name** - [GitHub](#) | [LinkedIn](#)
-- **Teammate 2** - [GitHub](#) | [LinkedIn](#)
+- **Your Name**
+- Niraj Thakar
+- Ravivarman Mayilsamy
+- Gowtham Sen Potnuru
+- Narayanan Anand
+- Srinivasulu Kummitha
