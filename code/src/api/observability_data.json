@@ -1,0 +1,72 @@
+[
+  {
+    "ci": "DB-PROD-03",
+    "status": "Degraded",
+    "cpu_usage": "92%",
+    "memory_usage": "78%",
+    "disk_usage": "65%",
+    "last_checked": "2025-03-23T10:15:00Z"
+  },
+  {
+    "ci": "WEB-APP-CLUSTER",
+    "status": "Healthy",
+    "cpu_usage": "45%",
+    "memory_usage": "50%",
+    "disk_usage": "55%",
+    "last_checked": "2025-03-23T10:12:00Z"
+  },
+  {
+    "ci": "API-GATEWAY-PROD",
+    "status": "Degraded",
+    "cpu_usage": "80%",
+    "memory_usage": "72%",
+    "disk_usage": "60%",
+    "last_checked": "2025-03-23T10:18:00Z"
+  },
+  {
+    "ci": "WAN-LINK-USEU",
+    "status": "Critical",
+    "packet_loss": "5%",
+    "latency": "300ms",
+    "bandwidth_usage": "85%",
+    "last_checked": "2025-03-23T10:20:00Z"
+  },
+  {
+    "ci": "AUTH-SERVICE-PROD",
+    "status": "Healthy",
+    "cpu_usage": "30%",
+    "memory_usage": "40%",
+    "disk_usage": "35%",
+    "last_checked": "2025-03-23T10:10:00Z"
+  },
+  {
+    "ci": "LOG-STORE-02",
+    "status": "Warning",
+    "cpu_usage": "55%",
+    "memory_usage": "65%",
+    "disk_usage": "90%",
+    "last_checked": "2025-03-23T10:08:00Z"
+  },
+  {
+    "ci": "PAYMENT-API-GATEWAY",
+    "status": "Degraded",
+    "response_time": "1200ms",
+    "error_rate": "5%",
+    "last_checked": "2025-03-23T10:22:00Z"
+  },
+  {
+    "ci": "K8S-ANALYTICS-CLUSTER",
+    "status": "Critical",
+    "cpu_usage": "95%",
+    "memory_usage": "90%",
+    "node_availability": "Reduced",
+    "last_checked": "2025-03-23T10:25:00Z"
+  },
+  {
+    "ci": "CDN-PROVIDER",
+    "status": "Healthy",
+    "cache_hit_rate": "98%",
+    "latency": "50ms",
+    "last_checked": "2025-03-23T10:15:00Z"
+  }
+]

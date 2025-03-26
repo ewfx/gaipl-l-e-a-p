@@ -1,0 +1,8 @@
+
+{
+  "web-prod-01": "https://grafana.example.com/dashboards/web-servers",
+  "db-prod-03": "https://grafana.example.com/dashboards/databases",
+  "payment-gw-01": "https://grafana.example.com/dashboards/payment-gateway",
+  "app-prod-02": "https://grafana.example.com/dashboards/application-servers",
+  "storage-nas-01": "https://grafana.example.com/dashboards/storage"
+}

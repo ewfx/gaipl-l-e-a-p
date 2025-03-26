@@ -1,0 +1,39 @@
+[
+  {
+    "ci": "DB-PROD-03",
+    "type": "Database",
+    "upstream": [
+      {"ci": "APP-SRV-01", "type": "Application Server", "relationship": "Depends On"},
+      {"ci": "WEB-SRV-01", "type": "Web Server", "relationship": "Depends On"}
+    ],
+    "downstream": [
+      {"ci": "STORAGE-01", "type": "Storage", "relationship": "Provides Data To"}
+    ]
+  },
+  {
+    "ci": "APP-SRV-01",
+    "type": "Application Server",
+    "upstream": [
+      {"ci": "WEB-SRV-01", "type": "Web Server", "relationship": "Depends On"}
+    ],
+    "downstream": [
+      {"ci": "DB-PROD-03", "type": "Database", "relationship": "Serves"}
+    ]
+  },
+  {
+    "ci": "WEB-SRV-01",
+    "type": "Web Server",
+    "upstream": [],
+    "downstream": [
+      {"ci": "APP-SRV-01", "type": "Application Server", "relationship": "Serves"}
+    ]
+  },
+  {
+    "ci": "STORAGE-01",
+    "type": "Storage",
+    "upstream": [
+      {"ci": "DB-PROD-03", "type": "Database", "relationship": "Stores Data For"}
+    ],
+    "downstream": []
+  }
+]

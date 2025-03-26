@@ -1,0 +1,177 @@
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 210 20% 98%;
+    --foreground: 222.2 84% 4.9%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 222.2 84% 4.9%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 222.2 84% 4.9%;
+
+    --primary: 222.2 47.4% 11.2%;
+    --primary-foreground: 210 40% 98%;
+
+    --secondary: 210 40% 96.1%;
+    --secondary-foreground: 222.2 47.4% 11.2%;
+
+    --muted: 210 40% 96.1%;
+    --muted-foreground: 215.4 16.3% 46.9%;
+
+    --accent: 210 40% 96.1%;
+    --accent-foreground: 222.2 47.4% 11.2%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 214.3 31.8% 91.4%;
+    --input: 214.3 31.8% 91.4%;
+    --ring: 222.2 84% 4.9%;
+
+    --radius: 0.5rem;
+
+    --sidebar-background: 0 0% 98%;
+    --sidebar-foreground: 240 5.3% 26.1%;
+    --sidebar-primary: 240 5.9% 10%;
+    --sidebar-primary-foreground: 0 0% 98%;
+    --sidebar-accent: 240 4.8% 95.9%;
+    --sidebar-accent-foreground: 240 5.9% 10%;
+    --sidebar-border: 220 13% 91%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+    
+    --chatbot-light: 0 0% 100%;
+    --chatbot-dark: 210 20% 20%;
+    --chatbot-accent: 210 100% 65%;
+    --chatbot-accent-hover: 210 100% 55%;
+  }
+
+  .dark {
+    --background: 222.2 84% 4.9%;
+    --foreground: 210 40% 98%;
+
+    --card: 222.2 84% 4.9%;
+    --card-foreground: 210 40% 98%;
+
+    --popover: 222.2 84% 4.9%;
+    --popover-foreground: 210 40% 98%;
+
+    --primary: 210 40% 98%;
+    --primary-foreground: 222.2 47.4% 11.2%;
+
+    --secondary: 217.2 32.6% 17.5%;
+    --secondary-foreground: 210 40% 98%;
+
+    --muted: 217.2 32.6% 17.5%;
+    --muted-foreground: 215 20.2% 65.1%;
+
+    --accent: 217.2 32.6% 17.5%;
+    --accent-foreground: 210 40% 98%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 217.2 32.6% 17.5%;
+    --input: 217.2 32.6% 17.5%;
+    --ring: 212.7 26.8% 83.9%;
+    
+    --sidebar-background: 240 5.9% 10%;
+    --sidebar-foreground: 240 4.8% 95.9%;
+    --sidebar-primary: 224.3 76.3% 48%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 240 3.7% 15.9%;
+    --sidebar-accent-foreground: 240 4.8% 95.9%;
+    --sidebar-border: 240 3.7% 15.9%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+    
+    --chatbot-light: 215 20% 15%;
+    --chatbot-dark: 0 0% 10%;
+    --chatbot-accent: 210 100% 55%;
+    --chatbot-accent-hover: 210 100% 45%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    font-feature-settings: "rlig" 1, "calt" 1;
+  }
+}
+
+@layer components {
+  .chatbot-container {
+    @apply relative flex flex-col w-full h-full max-w-4xl mx-auto overflow-hidden rounded-2xl bg-white/80 dark:bg-gray-900/80 backdrop-blur-md shadow-lg border border-gray-200 dark:border-gray-800;
+  }
+  
+  .chatbot-messages {
+    @apply flex flex-col p-4 md:p-6 space-y-4 overflow-y-auto;
+  }
+  
+  .message-user {
+    @apply self-end max-w-[80%] bg-chatbot-accent text-white rounded-2xl rounded-br-sm px-4 py-2 animate-fade-in;
+  }
+  
+  .message-bot {
+    @apply self-start max-w-[80%] bg-chatbot-light dark:bg-chatbot-dark rounded-2xl rounded-bl-sm px-4 py-2 shadow-sm border border-gray-100 dark:border-gray-800 animate-fade-in;
+  }
+  
+  .typing-indicator {
+    @apply flex space-x-1 p-2;
+  }
+  
+  .typing-dot {
+    @apply w-2 h-2 rounded-full bg-gray-400 animate-pulse-light;
+  }
+  
+  .typing-dot:nth-child(2) {
+    animation-delay: 0.2s;
+  }
+  
+  .typing-dot:nth-child(3) {
+    animation-delay: 0.4s;
+  }
+  
+  .chatbot-input-container {
+    @apply relative p-4 border-t border-gray-200 dark:border-gray-800 animate-slide-up;
+  }
+  
+  .chatbot-input {
+    @apply w-full px-4 py-3 pr-12 rounded-xl border border-gray-200 dark:border-gray-700 bg-white/90 dark:bg-gray-800/90 focus:ring-2 focus:ring-chatbot-accent focus:border-transparent;
+  }
+  
+  .chatbot-send-button {
+    @apply absolute right-6 bottom-6 p-2 rounded-full bg-chatbot-accent hover:bg-chatbot-accent-hover text-white transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-chatbot-accent disabled:opacity-50;
+  }
+  
+  .glass-effect {
+    @apply backdrop-blur-md bg-white/40 dark:bg-gray-900/40 border border-white/20 dark:border-gray-800/20;
+  }
+  
+  /* Voice input animation */
+  @keyframes pulse-recording {
+    0% {
+      transform: scale(1);
+      opacity: 1;
+    }
+    50% {
+      transform: scale(1.1);
+      opacity: 0.8;
+    }
+    100% {
+      transform: scale(1);
+      opacity: 1;
+    }
+  }
+  
+  .animate-pulse-recording {
+    animation: pulse-recording 1.5s infinite;
+  }
+}
